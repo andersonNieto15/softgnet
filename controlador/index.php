@@ -364,7 +364,7 @@ class modeloControllerLogin{
         $username     =   $_REQUEST['username'];
         $password     =   $_REQUEST['password'];
         $producto     =   new Modelo();
-        $dato=$producto->mostrar("*","system_users"," user_name='".$username."' and password='".$password."'");
+        $dato=$producto->mostrar("*","system_users"," user_name='".$username."' and password='".md5($password)."'");
         if(empty($dato)){
             $txt = "Credenciales de acceso inválidas";
             // require_once("vista/indexLogin.php");

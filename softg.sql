@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-06-2022 a las 05:47:24
+-- Tiempo de generación: 21-06-2022 a las 06:41:42
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 7.4.26
 
@@ -234,7 +234,7 @@ CREATE TABLE `system_users` (
 --
 
 INSERT INTO `system_users` (`id_system_user`, `fk_id_user`, `user_name`, `password`, `fk_profile`, `active`) VALUES
-(1, 3, 'adminadmin', '1234567', 1, 1);
+(1, 3, 'adminadmin', 'fcea920f7412b5da7be0cf42b8c93759', 1, 1);
 
 -- --------------------------------------------------------
 
